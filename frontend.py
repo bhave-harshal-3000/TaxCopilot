@@ -2,7 +2,7 @@
 AI Tax Copilot — Streamlit Frontend
 =====================================
 Single-file frontend that talks to the FastAPI backend running at
-http://127.0.0.1:8000.
+https://taxcopilot-ockc.onrender.com.
 
 Endpoints used:
   POST /cases                          → create_case()
@@ -30,7 +30,7 @@ import streamlit as st
 # Configuration
 # ---------------------------------------------------------------------------
 
-BASE_URL = "http://127.0.0.1:8000"
+BASE_URL = "https://taxcopilot-ockc.onrender.com"
 FINANCIAL_YEARS = ["2025-26", "2026-27"]
 
 DOCUMENT_TYPES = [
