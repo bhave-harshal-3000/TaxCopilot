@@ -30,11 +30,11 @@ class FinancialProfileBuilder:
             if isinstance(document, Form16Data):
 
                 profile.taxpayer_name = document.employee_name
-                profile.pan = document.pan
+                profile.pan = document.employee_pan
                 profile.financial_year = document.financial_year
 
-                profile.salary_income += document.salary or 0
-                profile.tds += document.tds or 0
+                profile.salary_income += document.gross_salary or 0
+                profile.tds += document.tds_deducted or 0
 
             
             # AIS
